@@ -335,7 +335,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xe5e
+.text           0x00000000      0xe58
  *(.vectors)
  .vectors       0x00000000       0x74 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
                 0x00000000                __vectors
@@ -349,42 +349,42 @@ END GROUP
  *(.trampolines*)
                 0x00000074                __trampolines_end = .
  *(.progmem*)
- .progmem.data  0x00000074       0xb9 Descriptors.o
+ .progmem.data  0x00000074       0xb3 Descriptors.o
                 0x00000074                ProductString
-                0x00000090                ManufacturerString
-                0x000000b2                LanguageString
-                0x000000b6                ConfigurationDescriptor
-                0x0000011b                DeviceDescriptor
-                0x0000012e                . = ALIGN (0x2)
- *fill*         0x0000012d        0x1 
+                0x00000092                ManufacturerString
+                0x000000ac                LanguageString
+                0x000000b0                ConfigurationDescriptor
+                0x00000115                DeviceDescriptor
+                0x00000128                . = ALIGN (0x2)
+ *fill*         0x00000127        0x1 
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x0000012e                __ctors_start = .
+                0x00000128                __ctors_start = .
  *(.ctors)
-                0x0000012e                __ctors_end = .
-                0x0000012e                __dtors_start = .
+                0x00000128                __ctors_end = .
+                0x00000128                __dtors_start = .
  *(.dtors)
-                0x0000012e                __dtors_end = .
+                0x00000128                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000012e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
-                0x0000012e                __init
+ .init0         0x00000128        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
+                0x00000128                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000012e        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
+ .init2         0x00000128        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x0000013a       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_copy_data.o)
-                0x0000013a                __do_copy_data
- .init4         0x00000150       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_clear_bss.o)
-                0x00000150                __do_clear_bss
+ .init4         0x00000134       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_copy_data.o)
+                0x00000134                __do_copy_data
+ .init4         0x0000014a       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_clear_bss.o)
+                0x0000014a                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -395,127 +395,127 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000160        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
+ .init9         0x0000015a        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
  *(.init9)
  *(.text)
- .text          0x00000164        0x2 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
-                0x00000164                __vector_20
-                0x00000164                __vector_28
-                0x00000164                __vector_1
-                0x00000164                __vector_24
-                0x00000164                __vector_12
-                0x00000164                __bad_interrupt
-                0x00000164                __vector_6
-                0x00000164                __vector_3
-                0x00000164                __vector_25
-                0x00000164                __vector_13
-                0x00000164                __vector_17
-                0x00000164                __vector_19
-                0x00000164                __vector_7
-                0x00000164                __vector_27
-                0x00000164                __vector_5
-                0x00000164                __vector_4
-                0x00000164                __vector_9
-                0x00000164                __vector_2
-                0x00000164                __vector_21
-                0x00000164                __vector_15
-                0x00000164                __vector_8
-                0x00000164                __vector_26
-                0x00000164                __vector_14
-                0x00000164                __vector_10
-                0x00000164                __vector_16
-                0x00000164                __vector_18
-                0x00000164                __vector_22
-                0x00000166                . = ALIGN (0x2)
+ .text          0x0000015e        0x2 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
+                0x0000015e                __vector_20
+                0x0000015e                __vector_28
+                0x0000015e                __vector_1
+                0x0000015e                __vector_24
+                0x0000015e                __vector_12
+                0x0000015e                __bad_interrupt
+                0x0000015e                __vector_6
+                0x0000015e                __vector_3
+                0x0000015e                __vector_25
+                0x0000015e                __vector_13
+                0x0000015e                __vector_17
+                0x0000015e                __vector_19
+                0x0000015e                __vector_7
+                0x0000015e                __vector_27
+                0x0000015e                __vector_5
+                0x0000015e                __vector_4
+                0x0000015e                __vector_9
+                0x0000015e                __vector_2
+                0x0000015e                __vector_21
+                0x0000015e                __vector_15
+                0x0000015e                __vector_8
+                0x0000015e                __vector_26
+                0x0000015e                __vector_14
+                0x0000015e                __vector_10
+                0x0000015e                __vector_16
+                0x0000015e                __vector_18
+                0x0000015e                __vector_22
+                0x00000160                . = ALIGN (0x2)
  *(.text.*)
  .text.SetupHardware
-                0x00000166       0x66 arduino_midi.o
-                0x00000166                SetupHardware
+                0x00000160       0x66 arduino_midi.o
+                0x00000160                SetupHardware
  .text.EVENT_USB_Device_Connect
-                0x000001cc        0xa arduino_midi.o
-                0x000001cc                EVENT_USB_Device_Connect
+                0x000001c6        0xa arduino_midi.o
+                0x000001c6                EVENT_USB_Device_Connect
  .text.EVENT_USB_Device_Disconnect
-                0x000001d6        0xa arduino_midi.o
-                0x000001d6                EVENT_USB_Device_Disconnect
+                0x000001d0        0xa arduino_midi.o
+                0x000001d0                EVENT_USB_Device_Disconnect
  .text.EVENT_USB_Device_ConfigurationChanged
-                0x000001e0       0x30 arduino_midi.o
-                0x000001e0                EVENT_USB_Device_ConfigurationChanged
+                0x000001da       0x30 arduino_midi.o
+                0x000001da                EVENT_USB_Device_ConfigurationChanged
  .text.MIDI_To_Host
-                0x00000210       0x5a arduino_midi.o
-                0x00000210                MIDI_To_Host
+                0x0000020a       0x5a arduino_midi.o
+                0x0000020a                MIDI_To_Host
  .text.MIDI_To_Arduino
-                0x0000026a       0x88 arduino_midi.o
-                0x0000026a                MIDI_To_Arduino
+                0x00000264       0x88 arduino_midi.o
+                0x00000264                MIDI_To_Arduino
  .text.startup.main
-                0x000002f2       0x42 arduino_midi.o
-                0x000002f2                main
+                0x000002ec       0x42 arduino_midi.o
+                0x000002ec                main
  .text.getTypeFromStatusByte
-                0x00000334       0x20 arduino_midi.o
-                0x00000334                getTypeFromStatusByte
+                0x0000032e       0x20 arduino_midi.o
+                0x0000032e                getTypeFromStatusByte
  .text.isChannelMessage
-                0x00000354       0x20 arduino_midi.o
-                0x00000354                isChannelMessage
+                0x0000034e       0x20 arduino_midi.o
+                0x0000034e                isChannelMessage
  .text.__vector_23
-                0x00000374      0x214 arduino_midi.o
-                0x00000374                __vector_23
+                0x0000036e      0x214 arduino_midi.o
+                0x0000036e                __vector_23
  .text.CALLBACK_USB_GetDescriptor
-                0x00000588       0x64 Descriptors.o
-                0x00000588                CALLBACK_USB_GetDescriptor
+                0x00000582       0x64 Descriptors.o
+                0x00000582                CALLBACK_USB_GetDescriptor
  .text.Endpoint_Write_Stream_LE
-                0x000005ec       0x90 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x000005ec                Endpoint_Write_Stream_LE
+                0x000005e6       0x90 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x000005e6                Endpoint_Write_Stream_LE
  .text.Endpoint_Read_Stream_LE
-                0x0000067c       0x90 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x0000067c                Endpoint_Read_Stream_LE
+                0x00000676       0x90 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00000676                Endpoint_Read_Stream_LE
  .text.Endpoint_Write_Control_Stream_LE
-                0x0000070c       0xc6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x0000070c                Endpoint_Write_Control_Stream_LE
+                0x00000706       0xc6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00000706                Endpoint_Write_Control_Stream_LE
  .text.Endpoint_Write_Control_PStream_LE
-                0x000007d2       0xc8 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x000007d2                Endpoint_Write_Control_PStream_LE
+                0x000007cc       0xc8 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x000007cc                Endpoint_Write_Control_PStream_LE
  .text.Endpoint_ConfigureEndpoint_Prv
-                0x0000089a       0x6a ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x0000089a                Endpoint_ConfigureEndpoint_Prv
+                0x00000894       0x6a ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000894                Endpoint_ConfigureEndpoint_Prv
  .text.Endpoint_ClearStatusStage
-                0x00000904       0x42 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00000904                Endpoint_ClearStatusStage
+                0x000008fe       0x42 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x000008fe                Endpoint_ClearStatusStage
  .text.Endpoint_WaitUntilReady
-                0x00000946       0x60 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00000946                Endpoint_WaitUntilReady
+                0x00000940       0x60 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00000940                Endpoint_WaitUntilReady
  .text.USB_ResetInterface
-                0x000009a6       0x72 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x000009a6                USB_ResetInterface
+                0x000009a0       0x72 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x000009a0                USB_ResetInterface
  .text.USB_Init
-                0x00000a18       0x12 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x00000a18                USB_Init
+                0x00000a12       0x12 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00000a12                USB_Init
  .text.USB_INT_DisableAllInterrupts
-                0x00000a2a        0x6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x00000a2a                USB_INT_DisableAllInterrupts
+                0x00000a24        0x6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000a24                USB_INT_DisableAllInterrupts
  .text.USB_INT_ClearAllInterrupts
-                0x00000a30        0x6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x00000a30                USB_INT_ClearAllInterrupts
+                0x00000a2a        0x6 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000a2a                USB_INT_ClearAllInterrupts
  .text.__vector_11
-                0x00000a36      0x148 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x00000a36                __vector_11
+                0x00000a30      0x148 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00000a30                __vector_11
  .text.USB_Device_ProcessControlRequest
-                0x00000b7e      0x2a2 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/DeviceStandardReq.o
-                0x00000b7e                USB_Device_ProcessControlRequest
+                0x00000b78      0x2a2 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00000b78                USB_Device_ProcessControlRequest
  .text.USB_Event_Stub
-                0x00000e20        0x2 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/Events.o
-                0x00000e20                EVENT_USB_Device_WakeUp
-                0x00000e20                USB_Event_Stub
-                0x00000e20                EVENT_USB_Device_Suspend
-                0x00000e20                EVENT_USB_Device_StartOfFrame
-                0x00000e20                EVENT_USB_Device_Reset
-                0x00000e20                EVENT_USB_Device_ControlRequest
+                0x00000e1a        0x2 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/Events.o
+                0x00000e1a                EVENT_USB_Device_WakeUp
+                0x00000e1a                USB_Event_Stub
+                0x00000e1a                EVENT_USB_Device_Suspend
+                0x00000e1a                EVENT_USB_Device_StartOfFrame
+                0x00000e1a                EVENT_USB_Device_Reset
+                0x00000e1a                EVENT_USB_Device_ControlRequest
  .text.USB_USBTask
-                0x00000e22       0x38 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/USBTask.o
-                0x00000e22                USB_USBTask
-                0x00000e5a                . = ALIGN (0x2)
+                0x00000e1c       0x38 ../../lufa-LUFA-151115/LUFA/Drivers/USB/Core/USBTask.o
+                0x00000e1c                USB_USBTask
+                0x00000e54                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000e5a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_exit.o)
-                0x00000e5a                exit
-                0x00000e5a                _exit
+ .fini9         0x00000e54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_exit.o)
+                0x00000e54                exit
+                0x00000e54                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -534,11 +534,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000e5a        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_exit.o)
+ .fini0         0x00000e54        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr35/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000e5e                _etext = .
+                0x00000e58                _etext = .
 
-.data           0x00800100        0x0 load address 0x00000e5e
+.data           0x00800100        0x0 load address 0x00000e58
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr35/crtm16u2.o
@@ -597,8 +597,8 @@ END GROUP
                 0x00800114                USB_DeviceState
                 0x00800115                USB_ControlRequest
                 0x0080011d                PROVIDE (__bss_end, .)
-                0x00000e5e                __data_load_start = LOADADDR (.data)
-                0x00000e5e                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000e58                __data_load_start = LOADADDR (.data)
+                0x00000e58                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0080011d        0x0
                 0x0080011d                PROVIDE (__noinit_start, .)
